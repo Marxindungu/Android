@@ -2,4 +2,5 @@
     <string name="app_name">Assessmentjetpack</string>
     <string name="title_activity_loginactivity">Loginactivity</string>
     <string name="title_activity_signup">Signup</string>
+    <string name="title_activity_image">ImageActivity</string>
 </resources>

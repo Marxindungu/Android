@@ -10,7 +10,14 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Email
+import androidx.compose.material.icons.filled.Lock
+import androidx.compose.material.icons.filled.Person
+import androidx.compose.material.icons.filled.Phone
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -81,6 +88,7 @@ fun Signuppage(){
 
         TextField(
             value = firstname,
+            leadingIcon = { Icon(Icons.Default.Person, contentDescription ="firstnameicon" ) },
             onValueChange = { firstname },
             label = { Text(text = "Firstname") },
             modifier = Modifier.fillMaxWidth()
@@ -92,6 +100,7 @@ fun Signuppage(){
 
         TextField(
             value = lastname,
+            leadingIcon = { Icon(Icons.Default.Person, contentDescription ="lastnameicon" )},
             onValueChange = { lastname },
             label = { Text(text = "Lastname") },
             modifier = Modifier.fillMaxWidth()
@@ -104,6 +113,7 @@ fun Signuppage(){
 
         TextField(
             value = email,
+            leadingIcon = { Icon(Icons.Default.Email, contentDescription ="emailicon" )},
             onValueChange = { email },
             label = { Text(text = "Email") },
             modifier = Modifier.fillMaxWidth()
@@ -115,6 +125,7 @@ fun Signuppage(){
 
         TextField(
             value = phone,
+            leadingIcon = { Icon(Icons.Default.Phone, contentDescription ="phoneicon" )},
             onValueChange = { phone },
             label = { Text(text = "Phone") },
             modifier = Modifier.fillMaxWidth()
@@ -125,12 +136,20 @@ fun Signuppage(){
         Text(text = "Enter preferred password", color = Color.Black, fontSize = 30.sp)
         TextField(
             value = password,
+            leadingIcon = { Icon(Icons.Default.Lock, contentDescription ="passwordicon" )},
             onValueChange ={password},
             label = { Text(text = "Password")},
             modifier = Modifier.fillMaxWidth()
 
 
         )
+
+        Button(onClick = { /*TODO*/ },
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text(text = "Sign up", color = Color.White)
+
+        }
 
 
     }

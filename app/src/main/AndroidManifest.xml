@@ -13,6 +13,11 @@
         android:theme="@style/Theme.Assessmentjetpack"
         tools:targetApi="31">
         <activity
+            android:name=".ImageActivity"
+            android:exported="false"
+            android:label="@string/title_activity_image"
+            android:theme="@style/Theme.Assessmentjetpack" />
+        <activity
             android:name=".Signup"
             android:exported="false"
             android:label="@string/title_activity_signup"
