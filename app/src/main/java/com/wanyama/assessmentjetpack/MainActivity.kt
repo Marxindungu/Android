@@ -68,6 +68,18 @@ fun Mediascreen (){
             Text(text = "LOGIN", color = Color.White)
 
         }
+
+        var scroll = LocalContext.current
+
+        Button(onClick = {
+            scroll.startActivity(Intent(scroll,ScrolledListview::class.java))
+        },
+            shape = RoundedCornerShape(5.dp),
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text(text = "TO LISTVIEW", color = Color.White)
+
+        }
     }
 }
 

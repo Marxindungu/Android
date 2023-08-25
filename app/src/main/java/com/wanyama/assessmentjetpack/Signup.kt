@@ -3,13 +3,17 @@ package com.wanyama.assessmentjetpack
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.Lock
@@ -30,6 +34,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -73,15 +78,17 @@ fun Signuppage(){
     }
 
     Column(
-        modifier = Modifier
-            .background(Color.White)
-            .fillMaxSize(),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
-
-
 
     ) {
+        Image(painter = painterResource(R.drawable.ferrarilogo),
+            contentDescription = null,
+            modifier = Modifier.fillMaxWidth()
+                .size(56240.dp,439.dp)
+                .fillMaxSize()
+                .padding(56.dp,)
+        )
+
+
         Text(text = "Enter your first name", color = Color.Black, fontSize = 30.sp)
 
         Spacer(modifier = Modifier.height(1.dp))
@@ -149,13 +156,17 @@ fun Signuppage(){
         ) {
             Text(text = "Sign up", color = Color.White)
 
+
+        }
+
+            
         }
 
 
     }
 
 
-}
+
 
 
 

@@ -13,6 +13,26 @@
         android:theme="@style/Theme.Assessmentjetpack"
         tools:targetApi="31">
         <activity
+            android:name=".ScrolledListview"
+            android:exported="false"
+            android:label="@string/title_activity_scrolled_listview"
+            android:theme="@style/Theme.Assessmentjetpack" />
+        <activity
+            android:name=".Mpesalist"
+            android:exported="false"
+            android:label="@string/title_activity_mpesalist"
+            android:theme="@style/Theme.Assessmentjetpack" />
+        <activity
+            android:name=".Listeg"
+            android:exported="false"
+            android:label="@string/title_activity_listeg"
+            android:theme="@style/Theme.Assessmentjetpack" />
+        <activity
+            android:name=".Listview.eg"
+            android:exported="false"
+            android:label="@string/title_activity_listview.eg"
+            android:theme="@style/Theme.Assessmentjetpack" />
+        <activity
             android:name=".ImageActivity"
             android:exported="false"
             android:label="@string/title_activity_image"
